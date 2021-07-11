@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+    overflow: hidden;
+}
+
+.lifes, .score, .finalScore, .multiplicador, .inmortal, .speed_nave, .speed_objetos,.instruciones{
+  position: absolute;
+  font-family: Verdana, Geneva, sans-serif;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome and Opera */
+}
+
+.finalScore{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.instruciones{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-style: outset;
+  border: 2px solid rgb(226, 231, 235);
+  border-radius: 5px;
+  background: rgb(0, 0, 0);
+  padding: 10px 12px;
+  overflow: hidden;
+  opacity: 0.95;
+}
+
+.score{
+  font-size: 1.5em;
+}
+.multiplicador{
+  font-size: 1.5em;
+  border-style: outset;
+  border: 2px solid rgb(202, 27, 15);
+  border-radius: 5px;
+  background: rgba(204, 187, 31, 0.938);
+  padding: 10px 12px;
+  overflow: hidden;
+}
+.speed_objetos{
+  font-size: 1.5em;
+  border-style: outset;
+  border: 2px solid rgb(202, 27, 15);
+  border-radius: 5px;
+  background: rgba(151, 150, 134, 0.938);
+  padding: 10px 12px;
+  overflow: hidden;
+}
+.speed_nave{
+  font-size: 1.5em;
+  border-style: outset;
+  border: 2px solid rgb(2, 2, 2);
+  border-radius: 5px;
+  background: rgba(204, 31, 31, 0.938);
+  padding: 10px 12px;
+  overflow: hidden;
+}
+.inmortal{
+  font-size: 1.5em;
+  border-style: outset;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  background: rgba(212, 20, 187, 0.938);
+  padding: 10px 12px;
+  overflow: hidden;
+}
+
+.finalScore, .instruciones{
+  font-size: initial;
+}
+
+.finalScore, .score{
+  border-style: outset;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  background: #FCFCFC;
+  padding: 10px 12px;
+  overflow: hidden;
+}
+
+#lifes{
+  font-size: 4.5em;
+  color: #FF0000;
+}
+
+#WebGL-output{
+  cursor: pointer;
+  -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+}
